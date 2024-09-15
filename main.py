@@ -17,7 +17,7 @@ model = SimpleCNN(num_classes=1)
 criterion = torch.nn.MSELoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
-for epoch in range(5):  # Number of epochs
+for epoch in range(5):
     model.train()
     running_loss = 0.0
     for batch in train_loader:
